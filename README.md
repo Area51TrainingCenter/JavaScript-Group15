@@ -10,4 +10,13 @@ Sabatino
 - [Variables](./docs/js-variables.md).
 - [Tipos de Datos](./docs/js-tipos-de-datos.md).
 - [Funciones: Introducción](./docs/js-funciones.md).
+- [Practicando lo aprendido](./docs/clase1.md).
+
+### Tarea
+
+- Buscar sobre Array: `.map` , `.forEach` , `.reduce` y `.filter`.
+
+- Crearse una cuenta en [SoloLearn](https://www.sololearn.com/) y avanzar el curso de JavaScript.
+
+- (Opcional) Buscar sobre "Programación Funcional".
 

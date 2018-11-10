@@ -68,3 +68,32 @@ console.log(tabla);
 ]
 */
 ```
+
+## 3 formas para crear funciones
+
+```js
+// 1.
+// ES5+ (ES5, ES6+, etc)
+function saludo() {
+  console.log("Hola Área51");
+}
+
+// [DEPRECIADO]
+// ES5 (Legacy)
+var saludo = function () {
+  console.log("Hola Área51");
+};
+
+// 2.
+// ES6+
+const saludo = function () {
+  console.log("Hola Área51");
+};
+
+// 3.
+// Arrow function (Recomended)
+const saludo = () => {
+  console.log("Hola Área51");
+};
+```
+
