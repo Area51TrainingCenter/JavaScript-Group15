@@ -63,3 +63,41 @@ const doble = numero => numero + numero;
 const suma = (a, b) => a + b;
 const saludo = () => suma(2, 5);
 ```
+
+### Explicación corta
+```js
+.forEach // No retorna
+.map // Retorna un array
+.reduce // Retorna el mismo tipo de dato de los elementos de la lista
+.filter // Retorna un array
+```
+
+```js
+const lista = [1, 2, 3, 4];
+
+lista.forEach(n => console.log(n));
+lista.map(n => n + 2); // [3, 4, 5, 6]
+lista.reduce((a, b) => a + b ); // 10
+lista.filter(n => n % 2 == 0); // [2, 4]
+```
+
+#### Ejercicios
+```js
+const letras = ['a', 'b', 'c', 'd'];
+const numeros = [3, 5, 7, 10];
+
+letras
+// 'abcd'
+
+letras
+// 'aabbccdd'
+
+numeros
+// [7, 11, 15, 21]
+
+numeros
+// 25
+
+numeros
+// [5, 10]
+```
