@@ -101,3 +101,31 @@ numeros
 numeros
 // [5, 10]
 ```
+
+#### Soluciones
+```js
+letras
+// 'abcd'
+// Pista: reduce, `Hola ${nombre}, ${mensaje}`
+letras.reduce((a, b) => `${a}${b}`);
+
+letras
+// 'abbccdd'
+// Pista: reduce, `Hola ${nombre}, ${mensaje}${mensaje}`
+letras.reduce((a, b) => `${a}${b}${b}`);
+
+numeros
+// [7, 11, 15, 21]
+// Pista: map, por 2 más 1
+letras.map(n => (n * 2) + 1);
+
+numeros
+// 25
+// Pista: reduce, suma
+letras.reduce((a, b) => a + b);
+
+numeros
+// [5, 10]
+// Pista: filter, multiplo de 5
+letras.filter(n => n % 5 == 0);
+````
