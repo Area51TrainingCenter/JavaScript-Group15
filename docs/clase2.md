@@ -130,6 +130,178 @@ numeros
 letras.filter(n => n % 5 == 0);
 ```
 
+## Operadores Lógicos
+
+```
+== // Igual a
+!= // Distinto de
+< // menor que
+> // mayor que
+
+<= // menor o igual a
+>= // mayor o igual a
+=< // ERROR
+=> // ERROR
+
+=== // Estrictamente igual a
+```
+
+```js
+1 == 1 // verdadero
+1 === 1 // verdadero
+
+true == 1 // verdadero
+true === 1 // falso
+```
+
+## Condicionales
+
+```js
+// sintaxis
+if (condición) {
+  // código que se ojecutará si la condición es verdadera
+}
+```
+
+#### Ejemplos
+
+```js
+if (true) {
+  console.log('Soy verdadero');
+} else {
+  console.log('Soy falso');
+}
+// Soy verdadero
+
+if (false) {
+  console.log('Soy verdadero');
+} else {
+  console.log('Soy falso');
+}
+// Soy falso
+```
+```js
+const edad = 17;
+
+if (edad >= 18) {
+  console.log('Es mayor de edad');
+} else {
+  console.log('Es menor de edad');
+}
+```
+
+
+#### Tipos de IF...ELSE
+```js
+if () {
+  
+}
+
+
+
+if () {
+  
+} else {
+
+}
+
+
+
+if () {
+  
+} else if () {
+
+} else {
+
+}
+```
+
+```js
+// iife: Immediately-invoked function expression
+(function () {
+  console.log('Hola');
+}())
+```
+
+
+### Ejercicios
+
+Crear una función que reciba un parámetro de tipo numérico, y al ejecutarlo muestre en consola si el número es par o impar.
+
+```js
+function ejercicio1(n) {
+  if (n % 2 == 0) {
+    console.log(`${n} es par`);
+  } else {
+    console.log(`${n} es impar`);
+  }
+}
+```
+
+```js
+function esPar(n) {
+  return n % 2 == 0;
+}
+
+function ejercicio1(n) {
+  if (esPar(n)) {
+    console.log(`${n} es par`);
+  } else {
+    console.log(`${n} es impar`);
+  }
+}
+
+ejercicio1(4);
+```
+
+# Ejercicio 2
+
+A Pedro le interesa Rosita. Y la quiere saludar de una forma más amigable que al resto de chicas.
+
+1. Durante el día verá a Anita, Rosita, Juana.
+
+2. Durante el día verá:
+['Diana', 'Lucia', 'Yssenia', 'Rosita', 'Juana', 'Anita']
+
+```js
+function saludo(nombre) {
+ if (nombre === 'Rosita') {
+   console.log(`Hola ${nombre}. Que bonito día, no?`);
+ } else {
+   console.log(`Hola ${nombre}`);
+ }
+}
+
+// 1.
+saludo('Anita');
+saludo('Rosita');
+saludo('Juana');
+
+// 2.
+const chicas = ['Diana', 'Lucia', 'Yessenia', 'Rosita', 'Juana', 'Anita']:
+
+// 2.A.
+for(let i = 0; i < chicas.length; i++) {
+  saludo( chicas[i] );
+  // continue;
+  // break;
+}
+
+// 2.B.
+chicas.forEach(nombre => saludo(nombre));
+
+// 2.C. (RECOMENDADA)
+chicas.forEach(saludo);
+```
+
+```js
+function sumar (a, b) {
+
+}
+numeros.reduce(sumar);
+numeros.reduce((a, b) => sumar(a, b));
+```
+
 ## Funciones de un String
 ```
 STRING
@@ -160,20 +332,33 @@ const apellidoPaterno = ' Gutierrez';
 //   ["Luis Gutierrez", "Pablo Gutierrez", "German Gutierrez", 
 //    "Diego Gutierrez"]
 
+// Pista: Usar .map .trim
+
+const hijos = nombres.map(nombre => {
+  return `${nombre.trim()} ${apellidoPaterno.trim()}`
+});
+console.log(hijos);
+
 
 // 2. Luis le debe 50 soles a German. Crear una función PAGAR
 //    que reciba el nombre de 2 personas y 1 monto. Mostrar
 //    en consola una oración indicando las personas y el monto pagado.
 
 function pagar(personaQuePaga, personaAPagar, monto) {
-  console.log( );
+  console.log(`${personaQuePaga.trim()} le pagará a ${personaAPagar.trim()} el monto de ${monto}`);
+  // console.log(''.concat(personaQuePaga).concat(' le pagará a ')... );
 }
+
+pagar('Luis', 'German', 50);
+pagar(nombres[0], nombres[2], 50);
 
 
 // 3. ¿Cuantos hijos tiene la familia Gutierrez?
 
 //    Mostrar en consola
 //    Pista: Usar .length
+
+console.log(nombres.length);
 
 
 // 4. Luis llevará a todos sus hermanos a un concierto.
@@ -186,9 +371,12 @@ const auto = {
 }
 
 function SubirAlAuto(persona) {
-  auto.push(persona);
+  auto.personas.push(persona);
 }
 
 // Pista: Usar .forEach
+
+// Respuesta
+nombres.forEach(SubirAlAuto);
 ```
 

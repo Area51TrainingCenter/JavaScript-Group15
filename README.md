@@ -21,8 +21,9 @@ Sabatino
 - (Opcional) Buscar sobre "Programación Funcional".
 
 
-## Clase 2
+## [Clase 2](./docs/clase2.md).
 
 - Explicando Array `.map` , `.forEach` , `.reduce` y `.filter`.
 - Operadores lógicos y condicionales.
-- 
+- Funciones de un String.
+- [BORRADOR](./docs/borrador.md).
