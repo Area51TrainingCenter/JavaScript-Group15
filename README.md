@@ -27,3 +27,60 @@ Sabatino
 - Operadores lógicos y condicionales.
 - Funciones de un String.
 - [BORRADOR](./docs/borrador.md).
+
+
+### Tarea
+
+- DOM: getElementById, getElementsByClassName, getElementsBytagName, querySelector, querySelectorAll
+- Eventos: CLICK, KEYPRESS.
+- (Corta) Parámetros por defecto/opcionales en funciones (Default parameters).
+- (Opcional) Bucles: For, while, do while, for… in, for… of. (continue, break).
+- Seguir practicando en [SoloLearn](https://www.sololearn.com/).
+
+
+## Clase 3
+
+- Usando IF con más de una condicional.
+- Jugando con Array .split y String .join .
+- DOM y eventos (Parte 1).
+
+### Tarea
+
+- String templates.
+
+
+## Clase 4
+
+- DOM y Eventos  (Parte 2).
+- Array and object destructing.
+- iife: Immediately-invoked function expression
+- Webpack
+
+## Clase 5
+
+- Trabajando con modulos: Import and export.
+- Rest parameter and Spread operator.
+- Classes
+
+
+## Clase 6
+
+- Promises.
+- async and await.
+- XMLHttpRequest y Fetch.
+
+
+## Clase 7
+- Conclusiones
+
+## Clase 8
+- FINAL
+
+## Más adelante
+
+- Generadores.
+- Symbols.
+- Set and Map.
+- Proxies.
+
+

@@ -100,7 +100,7 @@ tablaMultiplicar(5);
 // 3 * 5 = 15
 ```
 
-## String: Concatenando (ES6)
+## String: Concatenando (Template Literals ES6)
 
 ```js
 const nombre = 'Luisa';
