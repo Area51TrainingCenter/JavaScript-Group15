@@ -156,15 +156,31 @@ const apellidoPaterno = ' Gutierrez';
 // 1. Hijos de una misma familia. Formar sus nombres completos.
 //    (Los nombres no deben contener espacios de más).
 
+// Mostrar en consola:
+//   ["Luis Gutierrez", "Pablo Gutierrez", "German Gutierrez", 
+//    "Diego Gutierrez"]
+
+
 // 2. Luis le debe 50 soles a German. Crear una función PAGAR
 //    que reciba el nombre de 2 personas y 1 monto. Mostrar
 //    en consola una oración indicando las personas y el monto pagado.
 
+function pagar(personaQuePaga, personaAPagar, monto) {
+  console.log( );
+}
+
+
 // 3. ¿Cuantos hijos tiene la familia Gutierrez?
+
+//    Mostrar en consola
+//    Pista: Usar .length
+
 
 // 4. Luis llevará a todos sus hermanos a un concierto.
 //    Se requiere que todos suban al auto.
+
 //    Tenemos:
+
 const auto = {
   personas: []
 }
@@ -172,5 +188,7 @@ const auto = {
 function SubirAlAuto(persona) {
   auto.push(persona);
 }
+
+// Pista: Usar .forEach
 ```
 
