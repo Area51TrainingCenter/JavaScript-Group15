@@ -20,3 +20,9 @@ Sabatino
 
 - (Opcional) Buscar sobre "Programación Funcional".
 
+
+## Clase 2
+
+- Explicando Array `.map` , `.forEach` , `.reduce` y `.filter`.
+- Operadores lógicos y condicionales.
+- 

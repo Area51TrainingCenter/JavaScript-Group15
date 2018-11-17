@@ -102,7 +102,7 @@ numeros
 // [5, 10]
 ```
 
-#### Soluciones
+#### Soluciones
 ```js
 letras
 // 'abcd'
@@ -128,4 +128,49 @@ numeros
 // [5, 10]
 // Pista: filter, multiplo de 5
 letras.filter(n => n % 5 == 0);
-````
+```
+
+## Funciones de un String
+```
+STRING
+.length
+.trim
+.charAt
+.concat
+.split
+```
+
+Es común usar una función de un Array cuando se trabaja con `String`.
+
+```
+ARRAY
+.join
+```
+
+### Ejercicios
+
+```js
+const nombres = [' Luis ', 'Pablo  ', '  German', 'Diego'];
+const apellidoPaterno = ' Gutierrez';
+
+// 1. Hijos de una misma familia. Formar sus nombres completos.
+//    (Los nombres no deben contener espacios de más).
+
+// 2. Luis le debe 50 soles a German. Crear una función PAGAR
+//    que reciba el nombre de 2 personas y 1 monto. Mostrar
+//    en consola una oración indicando las personas y el monto pagado.
+
+// 3. ¿Cuantos hijos tiene la familia Gutierrez?
+
+// 4. Luis llevará a todos sus hermanos a un concierto.
+//    Se requiere que todos suban al auto.
+//    Tenemos:
+const auto = {
+  personas: []
+}
+
+function SubirAlAuto(persona) {
+  auto.push(persona);
+}
+```
+
