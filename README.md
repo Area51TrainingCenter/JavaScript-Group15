@@ -21,7 +21,7 @@ Sabatino
 - (Opcional) Buscar sobre "Programación Funcional".
 
 
-## [Clase 2](./docs/clase2.md).
+## [Clase 2](./docs/clase2.md)
 
 - Explicando Array `.map` , `.forEach` , `.reduce` y `.filter`.
 - Operadores lógicos y condicionales.
@@ -31,7 +31,7 @@ Sabatino
 
 ### Tarea
 
-- DOM: getElementById, getElementsByClassName, getElementsBytagName, querySelector, querySelectorAll
+- DOM: getElementById, getElementsByClassName, getElementsByTagName, querySelector, querySelectorAll
 - Eventos: CLICK, KEYPRESS.
 - (Corta) Parámetros por defecto/opcionales en funciones (Default parameters).
 - (Opcional) Bucles: For, while, do while, for… in, for… of. (continue, break).
@@ -41,18 +41,31 @@ Sabatino
 ## Clase 3
 
 - Usando IF con más de una condicional.
-- Jugando con Array .split y String .join .
-- DOM y eventos (Parte 1).
+- Extensiones recomendadas para VSCode.
+- [Array and object destructing](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Operadores/Destructuring_assignment).
+- [DOM y eventos (Parte 1)](./docs/js-dom.md).
+- [Glosario](./docs/glosario.md).
+
 
 ### Tarea
 
+- DOM: getElementById, getElementsByClassName, getElementsByTagName, querySelector, querySelectorAll.
+- EVENTOS.
+
+- Jugando con Array .split y String .join .
+- (Corta) Parámetros por defecto/opcionales en funciones (Default parameters).
 - String templates.
+
+- Clases en JavaScript.
+- Programación Orientada a Objetos (POO / OOP).
+
+### Examen
+-
 
 
 ## Clase 4
 
 - DOM y Eventos  (Parte 2).
-- Array and object destructing.
 - iife: Immediately-invoked function expression
 - Webpack
 
