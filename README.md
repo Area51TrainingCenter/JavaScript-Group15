@@ -69,6 +69,31 @@ Sabatino
 - iife: Immediately-invoked function expression
 - Webpack
 
+
+### Tarea
+
+- [TodoList](http://todomvc.com/examples/vanilla-es6/).
+
+
+### Recomendaciones:
+
+- Compartir código a través de [StackBlitz](https://stackblitz.com/).
+- [Webpack 4: Introducción](https://medium.com/@renzocastro/webpack-4-introducci%C3%B3n-41062c8247f).
+- [Webpack + Babel: Transpilando tu .JS](https://medium.com/@renzocastro/webpack-babel-transpilando-tu-js-502244a61f5b).
+
+
+```
+# LOCAL SERVER
+python -V
+
+# If Python version returned above is 3.X
+python3 -m http.server
+
+# If Python version returned above is 2.X
+python -m SimpleHTTPServer
+
+```
+
 ## Clase 5
 
 - Trabajando con modulos: Import and export.
