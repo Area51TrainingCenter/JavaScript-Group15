@@ -22,6 +22,8 @@ const onClickBtnAgregar = event => {
   html = html.replace(/\{\{numero\}\}/g, acumulador);
 
   circleContainer.innerHTML = html;
+
+  circleContainer.addEventListener('click', onClickCircle);
   
   container.appendChild(circleContainer);
 }
@@ -41,6 +43,14 @@ const onClickBtnEliminar = event => {
   if (circleContainer != undefined) {
     container.removeChild( circleContainer );
   }
+};
+
+const onClickCircle = event => {
+  console.log('click');
+
+  const circleContainer = event.currentTarget;
+  
+  container.removeChild(circleContainer);
 };
 
 const cache = () => {
