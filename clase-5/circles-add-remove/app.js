@@ -2,14 +2,26 @@ let container;
 let templateCirculo;
 let btnAgregar;
 let btnEliminar;
+let acumulador;
 
 const onClickBtnAgregar = event => {
   event.preventDefault();
 
+  // if (container.children.length == 0) {
+  //   acumulador = 1;
+  // } else {
+  //   acumulador += 1;
+  // }
+
+  acumulador = container.children.length + 1;
+
   const circleContainer = document.createElement('div');
   circleContainer.classList.add('circle-container');
 
-  circleContainer.innerHTML = templateCirculo.innerHTML;
+  let html = templateCirculo.innerHTML
+  html = html.replace(/\{\{numero\}\}/g, acumulador);
+
+  circleContainer.innerHTML = html;
   
   container.appendChild(circleContainer);
 }
@@ -20,11 +32,15 @@ const onClickBtnEliminar = event => {
   // OPCIÓN 1
   // const circleContainer = container.querySelector('.circle-container:last-child');
 
+
   // OPCIÓN 2
   const circleContainers = [...container.querySelectorAll('.circle-container')];
   const circleContainer = circleContainers[circleContainers.length - 1];
+  
 
-  container.removeChild(circleContainer);
+  if (circleContainer != undefined) {
+    container.removeChild( circleContainer );
+  }
 };
 
 const cache = () => {
