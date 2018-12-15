@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Circles: add / remove</title>
+  <style>
+    #container {
+      
+    }
+
+    .circle-container {
+      padding: 5px;
+    }
+    .circle {
+      background-color: pink;
+      border-radius: 5px;
+      height: 10px;
+      width: 10px;
+    }
+  </style>
+</head>
+<body>
+  <button id="btn-agregar">Agregar</button>
+
+  <div id="container"></div>
+
+  <template id="tpl-circle">
+    <div class="circle"></div>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
