@@ -66,6 +66,7 @@ Sabatino
 ## Clase 4
 
 - DOM y Eventos  (Parte 2).
+- Rest parameter and Spread operator.
 - iife: Immediately-invoked function expression
 - Webpack
 
@@ -75,7 +76,7 @@ Sabatino
 - [TodoList](http://todomvc.com/examples/vanilla-es6/).
 
 
-### Recomendaciones:
+### Recomendaciones
 
 - Compartir código a través de [StackBlitz](https://stackblitz.com/).
 - [Webpack 4: Introducción](https://medium.com/@renzocastro/webpack-4-introducci%C3%B3n-41062c8247f).
@@ -96,20 +97,31 @@ python -m SimpleHTTPServer
 
 ## Clase 5
 
-- Trabajando con modulos: Import and export.
-- Rest parameter and Spread operator.
-- Classes
+- [TodoList](./clase-5/todolist/).
+- [Entendiendo `event.currentTarget`](./clase-5/circles-add-remove/).
+- 3 formas para crear de un efecto tipo [acordeón](./clase-5/accordion/).
+- [Eventos delegados](./clase-5/todolist-delegate/).
+
+### Tarea
+
+- [tic-tac-toe](https://www.google.com.pe/search?q=tic-tac-toe).
+
+### Recomendaciones
+
+- [Understanding Javascript Function Executions — Call Stack, Event Loop , Tasks & more](https://medium.com/@gaurav.pandvia/understanding-javascript-function-executions-tasks-event-loop-call-stack-more-part-1-5683dea1f5ec).
 
 
 ## Clase 6
 
-- Promises.
-- async and await.
-- XMLHttpRequest y Fetch.
+- Classes.
+- Trabajando con modulos: Import and export.
+- localStorage.
 
 
 ## Clase 7
-- Conclusiones
+- Promises.
+- async and await.
+- XMLHttpRequest y Fetch.
 
 ## Clase 8
 - FINAL

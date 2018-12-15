@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,17 +15,31 @@
       border: 1px solid red;
       margin-bottom: 5px;
     }
+
     .panel:last-child {
       margin-bottom: 0;
     }
+
     .panel__header {
       background-color: red;
       color: white;
     }
+
     .panel__body {
-      padding: 5px;
+      overflow: hidden;
+      /* max-height: 100px; */
+      /* transition: max-height 300ms ease-out; */
+      transition: height 300ms ease-out;
     }
 
+    .panel__body > div {
+      padding: 5px;
+    }
+    
+    .panel.is-closed .panel__body {
+      display: none;
+      /* max-height: 0; */
+    }
   </style>
 </head>
 <body>
@@ -34,17 +48,23 @@
 
     <div class="panel">
       <div class="panel__header">Título 1</div>
-      <div class="panel__body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus repellendus similique molestiae doloribus ut aperiam culpa quibusdam, molestias praesentium sed.</div>
+      <div class="panel__body">
+        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus repellendus similique molestiae doloribus ut aperiam culpa quibusdam, molestias praesentium sed.</div>
+      </div>
     </div>
 
     <div class="panel">
       <div class="panel__header">Título 2</div>
-      <div class="panel__body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus repellendus similique molestiae doloribus ut aperiam culpa quibusdam, molestias praesentium sed.</div>
+      <div class="panel__body">
+        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus repellendus similique molestiae doloribus ut aperiam culpa quibusdam, molestias praesentium sed.</div>
+      </div>
     </div>
 
     <div class="panel">
       <div class="panel__header">Título 3</div>
-      <div class="panel__body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus repellendus similique molestiae doloribus ut aperiam culpa quibusdam, molestias praesentium sed.</div>
+      <div class="panel__body">
+        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus repellendus similique molestiae doloribus ut aperiam culpa quibusdam, molestias praesentium sed.</div>
+      </div>
     </div>
 
   </div>
