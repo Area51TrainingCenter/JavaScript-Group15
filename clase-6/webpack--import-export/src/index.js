@@ -1,4 +1,6 @@
 import { sumar, multiplicar } from './libs/utils';
+import { numeroALetras } from './libs/conversion';
+
 
 const saludo = 'Hola mundo!';
 console.log(`saludo: ${saludo}`);
@@ -11,6 +13,20 @@ console.log(resultado);
 
 resultado = multiplicar(3, 5);
 console.log(resultado);
+
+
+
+// ./lib/conversion.js
+// Función "numeroALetras" con alcance de 0 a 10
+
+console.log(numeroALetras(2));
+// "Dos"
+
+console.log(numeroALetras(10));
+// "Diez"
+
+console.log(numeroALetras(0));
+// "Cero"
 
 
 

@@ -1,0 +1,14 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "area51"
+    },
+    {
+      "id": 2,
+      "title": "webpack",
+      "author": "JavaScript"
+    }
+  ]
+}
