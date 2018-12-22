@@ -35,6 +35,21 @@
       "contactoId": "1",
       "monto": "34.25",
       "id": 2
+    },
+    {
+      "contactoId": "3",
+      "monto": "9",
+      "id": 3
+    },
+    {
+      "contactoId": "2",
+      "monto": "2.34",
+      "id": 4
+    },
+    {
+      "contactoId": "1",
+      "monto": "50",
+      "id": 5
     }
   ]
 }

@@ -55,9 +55,43 @@
   </style>
 </head>
 <body>
-  <h3>Webpack <br> <small>Import / Export modules</small></h3>
+  <h3>Webpack <br> <small>Import / Export modules + fetch</small></h3>
 
-  <p>Ver console</p>
+  <div class="container flex">
+    <div class="col col-1">
+      <form action="" id="js-form">
+        <p>
+          <label for="js-contacto">Contactos:</label><br>
+          <select name="contacto" id="js-contacto" size="6">
+          </select>
+        </p>
+
+        <p>
+          <label for="js-monto">Monto a pagar:</label><br>
+          <input type="text" name="monto" id="js-monto" placeholder="0.00">
+        </p>
+
+        <p>
+          <button type="submit" id="js-pagar">Pagar</button>
+        </p>
+      </form>
+    </div>
+
+    <div class="col col-2">
+      <label>Pagos</label><br>
+      <table class="pagos">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>MONTO</th>
+          </tr>
+        </thead>
+        <tbody id="js-pagos">
+
+        </tbody>
+      </table>
+    </div>
+  </div>
 
   <script src="main.js"></script>
 </body>

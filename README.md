@@ -113,9 +113,21 @@ python -m SimpleHTTPServer
 
 ## Clase 6
 
-- Classes.
 - Trabajando con modulos: Import and export.
+- Fetch.
+- Classes.
 - localStorage.
+
+### Tarea
+
+- Completar YAPE app: Mostrar nombre de contactos en los pagos.
+
+
+### Recomendaciones
+
+- [Utilizando Fetch](https://developer.mozilla.org/es/docs/Web/API/Fetch_API/Utilizando_Fetch).
+- [axios: Promise based HTTP client for the browser and node.js](https://github.com/axios/axios).
+- [Simple wrapper para usar Fetch](https://stackoverflow.com/a/45154118).
 
 
 ## Clase 7

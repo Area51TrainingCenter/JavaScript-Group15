@@ -167,6 +167,11 @@ $RECYCLE.BIN/
 # End of https://www.gitignore.io/api/osx,node,sass,code,linux,windows
 
 dist/
+
 !clase-6/webpack--import-export/dist/
 clase-6/webpack--import-export/dist/*.*
 !clase-6/webpack--import-export/dist/index.html
+
+!clase-6/yape/dist/
+clase-6/yape/dist/*.*
+!clase-6/yape/dist/index.html
