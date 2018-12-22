@@ -65,10 +65,11 @@ Sabatino
 
 ## Clase 4
 
-- DOM y Eventos  (Parte 2).
+- DOM y Eventos (Parte 2).
 - Rest parameter and Spread operator.
-- iife: Immediately-invoked function expression
-- Webpack
+- iife: Immediately-invoked function expression.
+- Webpack.
+- XMLHttpRequest y Fetch (Parte 1).
 
 
 ### Tarea
@@ -114,13 +115,13 @@ python -m SimpleHTTPServer
 ## Clase 6
 
 - Trabajando con modulos: Import and export.
-- Fetch.
-- Classes.
-- localStorage.
+- Fetch (Parte 2).
+- Class (Parte 1).
+
 
 ### Tarea
 
-- Completar YAPE app: Mostrar nombre de contactos en los pagos.
+- Completar YAPE app: Mostrar nombre de contactos en los pagos (CALIFICADA).
 
 
 ### Recomendaciones
@@ -129,14 +130,21 @@ python -m SimpleHTTPServer
 - [axios: Promise based HTTP client for the browser and node.js](https://github.com/axios/axios).
 - [Simple wrapper para usar Fetch](https://stackoverflow.com/a/45154118).
 
+- [Understanding the "this" keyword, call, apply, and bind in JavaScript
+](https://tylermcginnis.com/this-keyword-call-apply-bind-javascript/).
+
 
 ## Clase 7
+
 - Promises.
 - async and await.
-- XMLHttpRequest y Fetch.
+- localStorage.
+- Class (Parte 2).
 
 ## Clase 8
+
 - FINAL
+
 
 ## Más adelante
 
