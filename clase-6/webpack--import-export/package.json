@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development --devtool source-maps",
+    "dev": "webpack --mode development --devtool source-maps --watch",
     "prod": "webpack --mode production",
     "db": "json-server --watch db.json",
     "server": "python -m SimpleHTTPServer"
