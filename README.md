@@ -141,6 +141,11 @@ python -m SimpleHTTPServer
 - localStorage.
 - Class (Parte 2).
 
+
+### Recomendaciones
+
+- [Promises](https://developers.google.com/web/fundamentals/primers/promises?hl=es).
+
 ## Clase 8
 
 - FINAL

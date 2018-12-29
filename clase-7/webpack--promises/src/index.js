@@ -19,10 +19,10 @@ const mensajePromesa = () => {
 };
 
 mensajePromesa()
-  .then((mensaje) => {
+  .then((mensaje) => { // resolve
     console.log('OK!', mensaje);
   })
-  .catch(() => {
+  .catch(() => { // reject
     console.log('ERROR!');
   });
 
@@ -40,3 +40,25 @@ setTimeout(() => {
 // .then
 // .catch
 // .when
+
+
+const sumar = (a, b) => {
+  return a + b;
+};
+
+const promesaSumar = (a, b) => {
+  return new Promise((resolve, reject) => {
+
+    setTimeout(() => {
+
+      resolve(a + b);
+
+    }, 3000);
+
+  });
+};
+
+promesaSumar(3, 5)
+  .then((resultado) => {
+    console.log('SUMA', resultado);
+  });
