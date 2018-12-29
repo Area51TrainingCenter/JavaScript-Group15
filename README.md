@@ -136,8 +136,8 @@ python -m SimpleHTTPServer
 
 ## Clase 7
 
-- Promises.
-- async and await.
+- Promise.
+- async / await.
 - localStorage.
 - Class (Parte 2).
 

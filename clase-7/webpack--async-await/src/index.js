@@ -78,6 +78,8 @@ const mostrarDatos = () => new Promise((resolve, reject) => {
 // 3. mostrarDatos
 
 
+// USANDO ASYNC / AWAIT / TRY ... CATCH
+
 const sistema = async () => {
   try {
     await validarSesion();
@@ -94,3 +96,31 @@ const sistema = async () => {
 };
 
 sistema();
+
+
+// USANDO .then .catch
+
+const sistema2 = () => {
+  validarSesion()
+    .then(() => {
+      console.log('SESSION OK!');
+
+      mostrarDatos().then(() => {
+        console.log('DATOS MOSTRADOS');
+      })
+    })
+    .catch(() => {
+      console.log('SESSION ERROR!');
+
+      login('alumno', '123456')
+        .then(() => {
+          console.log('LOGUEADO');
+
+          mostrarDatos().then(() => {
+            console.log('DATOS MOSTRADOS');
+          })
+        })
+    });
+};
+
+sistema2();
