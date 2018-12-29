@@ -179,3 +179,7 @@ clase-6/yape/dist/*.*
 !clase-7/webpack--promises/dist/
 clase-7/webpack--promises/dist/*.*
 !clase-7/webpack--promises/dist/index.html
+
+!clase-7/webpack--async-await/dist/
+clase-7/webpack--async-await/dist/*.*
+!clase-7/webpack--async-await/dist/index.html

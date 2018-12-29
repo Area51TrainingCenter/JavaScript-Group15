@@ -148,6 +148,8 @@ python -m SimpleHTTPServer
 
 - Programación Funcional [Parte 1](https://medium.com/laboratoria-developers/introducci%C3%B3n-a-la-programaci%C3%B3n-funcional-en-javascript-parte-1-e0b1d0b2142e), [Parte 2](https://medium.com/laboratoria-developers/introducci%C3%B3n-a-la-programaci%C3%B3n-funcional-en-javascript-parte-2-funciones-puras-b99e08c2895d), [Parte 3](https://medium.com/laboratoria-developers/introducci%C3%B3n-a-la-programaci%C3%B3n-funcional-en-javascript-parte-3-composici%C3%B3n-f82ac871dcfb).
 
+- [Syntax for async arrow function] (https://stackoverflow.com/questions/42964102/syntax-for-async-arrow-function).
+
 ## Clase 8
 
 - FINAL

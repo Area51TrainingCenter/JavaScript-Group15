@@ -106,13 +106,19 @@ const sistemaIntermitente = () => {
   });
 }
 // DEMO 1
+const loading = true;
+
 sistemaIntermitente()
   .then(() => {
     console.log('SIN ERRORES');
   })
   .catch(() => {
     console.log('CON ERRORES');
-  });
+  })
+  .finally(() => {
+    loading = false;
+    console.log('ME EJECUTO SI HUBO ERRORES O NO! SIEMPRE AL FINAL');
+  })
 
 
 // DEMO 2
@@ -142,3 +148,4 @@ Promise.all([
   // })
   .then(response => console.log('OK arguments', response[0], response[1], response[2]))
   .catch(err => console.log('ERROR arguments', err));
+
