@@ -71,8 +71,26 @@ const mostrarDatos = () => new Promise((resolve, reject) => {
 });
 
 
+// ASYNC / AWAIT
+
 // 1. validarSesion
 // 2. login
 // 3. mostrarDatos
 
 
+const sistema = async () => {
+  try {
+    await validarSesion();
+    console.log('SESSION OK!');
+  } catch(err) {
+    console.log('SESSION ERROR!');
+
+    await login('alumno', '123456');
+    console.log('LOGUEADO');
+  }
+
+  await mostrarDatos();
+  console.log('DATOS MOSTRADOS');
+};
+
+sistema();
