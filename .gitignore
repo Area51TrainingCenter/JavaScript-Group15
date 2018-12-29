@@ -175,3 +175,7 @@ clase-6/webpack--import-export/dist/*.*
 !clase-6/yape/dist/
 clase-6/yape/dist/*.*
 !clase-6/yape/dist/index.html
+
+!clase-7/webpack--promises/dist/
+clase-7/webpack--promises/dist/*.*
+!clase-7/webpack--promises/dist/index.html
