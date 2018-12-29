@@ -138,9 +138,24 @@ python -m SimpleHTTPServer
 
 - Promise.
 - async / await.
-- localStorage.
 - Class (Parte 2).
 
+### TAREA
+
+- Agregar DELETE en la sección PAGOS en YAPE (clase-6).
+- Hacer desde cero el TodoList (clase-5) con Base de Datos (json-server) y Webpack.
+
+### Comandos
+```bash
+# Base de Datos local (API JSON)
+npm install --save-dev json-server
+
+# LOCAL SERVER (FILES)
+npm install --save-dev http-server
+# o
+npm install --save-dev local-web-server
+```
+Ver uso en la app de YAPE (clase-6).
 
 ### Recomendaciones
 
@@ -150,9 +165,18 @@ python -m SimpleHTTPServer
 
 - [Syntax for async arrow function] (https://stackoverflow.com/questions/42964102/syntax-for-async-arrow-function).
 
+
 ## Clase 8
 
-- FINAL
+- webpack fix async / await.
+- webpack HTML + SASS
+- history push (Navegación SPA).
+
+- PRACTICA FINAL: DESARROLLO DE UNA APP similar a YAPE y TodoList (Tarea clase 7).
+
+### Recomendaciones
+- [localStorage](https://michalzalecki.com/why-using-localStorage-directly-is-a-bad-idea/).
+- [Cookies vs localStorage vs sessionStorage](http://www.webtutoriales.com/articulos/cookies-vs-localstorage-vs-sessionstorage).
 
 
 ## Más adelante
@@ -161,5 +185,3 @@ python -m SimpleHTTPServer
 - Symbols.
 - Set and Map.
 - Proxies.
-
-

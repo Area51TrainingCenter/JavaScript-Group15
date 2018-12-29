@@ -32,10 +32,15 @@ export class YAPEController {
   loadContactos() {
     console.log('loadContactos: this', this);
 
-    fetch('http://localhost:3000/yape-contactos')
-      .then(response => response.json())
-      // .then(json => console.log(json))
+    this._services = new YAPEServices();
+
+    this._services.getContacts()
       .then(this.onLoadContactos.bind(this));
+
+    // fetch('http://localhost:3000/yape-contactos')
+    //   .then(response => response.json())
+    //   // .then(json => console.log(json))
+    //   .then(this.onLoadContactos.bind(this));
   }
 
   loadPagos() {
@@ -70,8 +75,8 @@ export class YAPEController {
     const { options, selectedIndex } = this.contactoSelectElement;
 
     const data = {
-      contactoId: options[selectedIndex].value,
-      monto: this.montoElement.value
+      contactoId: Number(options[selectedIndex].value),
+      monto: Number(this.montoElement.value)
     };
 
     this.hacerPago(data);
@@ -79,6 +84,7 @@ export class YAPEController {
 
   onLoadContactos(contactos) {
     console.log('onLoadContactos: this', this);
+    this._contactos = contactos;
 
     contactos.forEach(contacto => {
       let optionElement = document.createElement('option');
@@ -98,12 +104,18 @@ export class YAPEController {
     let row = document.createElement('tr');
     let td1 = document.createElement('td');
     let td2 = document.createElement('td');
+    let td3 = document.createElement('td');
+
+    const contactosFiltered = this._contactos.filter(item => item.id === data.contactoId);
+    const contacto = contactosFiltered[0];
 
     td1.textContent = data.contactoId;
-    td2.textContent = data.monto;
+    td2.textContent = (contacto && contacto.nombre) || 'NO NAME';
+    td3.textContent = data.monto;
 
     row.appendChild(td1);
     row.appendChild(td2);
+    row.appendChild(td3);
 
     this.pagosElement.appendChild(row);
   }
@@ -116,5 +128,12 @@ export class YAPEServices {
 
   getContacts() {
     console.log('YAPE::getContacts');
+
+    return new Promise((resolve, reject) => {
+      fetch('http://localhost:3000/yape-contactos')
+        .then(response => response.json())
+        // .then(json => console.log(json))
+        .then(json => resolve(json));
+    });
   }
 }
